@@ -23,7 +23,7 @@ class cfinote(models.Model):
 
 
 class patch(models.Model):
-    id = models.CharField(max_length=20, verbose_name='ID')
+    number = models.CharField(max_length=20, verbose_name='ID')
     add_time = models.DateTimeField(default=datetime.now, verbose_name='Add Time')
     start_time = models.DateTimeField(verbose_name='Start Time', null=True, blank=True)
     start_mail = models.CharField(choices=(('y', 'Send'), ('n', 'Not send')), default='n', max_length=2)

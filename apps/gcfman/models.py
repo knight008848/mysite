@@ -20,8 +20,8 @@ class gcfnote(models.Model):
     muiflag = models.BooleanField(default=False)
     cfiflag = models.BooleanField(default=False)
     siaccount = models.CharField(max_length=45, null=True, blank=True, verbose_name='CFI Account')
-    mod = models.CharField(verbose_name='MOD Content')
-    sdr = models.CharField(verbose_name='SDR Content')
+    mod = models.TextField(verbose_name='MOD Content')
+    sdr = models.TextField(verbose_name='SDR Content')
     filepath = models.CharField(max_length=100, verbose_name='File Path')
     quantity = models.IntegerField(default=0, null=True, blank=True, verbose_name='Quantity')
 
