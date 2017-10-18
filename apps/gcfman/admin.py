@@ -15,7 +15,7 @@ class GcfAdmin(admin.ModelAdmin):
             ('Basic information', {
                 'fields': (
                     ('number', 'level', 'family', 'model'),
-                    ('destination', 'region', 'ctomod'),
+                    ('dest', 'region', 'ctomod'),
                     ('OSV', 'OSP', 'OSD'),
                     'muiflag',
                     'cfiflag',

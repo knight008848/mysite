@@ -12,23 +12,5 @@ class GcfAdmin(object):
     ordering = ('-add_time',)
     date_hierarchy = 'add_time'
 
-    fieldsets = [
-            ('Basic information', {
-                'fields': (
-                    ('number', 'level', 'family', 'model'),
-                    ('destination', 'region', 'ctomod'),
-                    ('OSV', 'OSP', 'OSD'),
-                    'muiflag',
-                    'cfiflag',
-                    'siaccount',
-                    'quantity'
-                )
-            }),
-            ('Advanced information', {
-                'fields': ('add_time', 'mod', 'sdr', 'filepath'),
-                'classes': ('collapse',)
-            })
-                ]
-
 
 xadmin.site.register(gcfnote, GcfAdmin)
