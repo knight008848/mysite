@@ -19,4 +19,4 @@ class PatchAdmin(admin.ModelAdmin):
 
 
 admin.site.register(cfinote, CfiAdmin)
-admin.site.register(patch, PatchAdmin)
+# admin.site.register(patch, PatchAdmin)

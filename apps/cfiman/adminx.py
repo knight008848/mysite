@@ -20,4 +20,4 @@ class PatchAdmin(object):
 
 
 xadmin.site.register(cfinote, CfiAdmin)
-xadmin.site.register(patch, PatchAdmin)
+# xadmin.site.register(patch, PatchAdmin)
