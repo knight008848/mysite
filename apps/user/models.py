@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib import admin
 from django.contrib.auth.models import AbstractUser
 
 from datetime import datetime
@@ -18,3 +19,10 @@ class UserProfile(AbstractUser):
 
     def __unicode__(self):
         return self.username
+
+
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ['username', 'email', 'is_staff', 'is_superuser', 'last_login']
+
+
+admin.site.register(UserProfile, UserProfileAdmin)
